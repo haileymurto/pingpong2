@@ -17,18 +17,17 @@ var pingPong = function(n) {
      }
     }
   return emptyString.join("");
- }
+}
 
 
-    $(document).ready(function() {
-      $("form#input").submit(function(event) {
-        var n = $("input#text").val();
+$(document).ready(function() {
+  $("form#input").submit(function(event) {
+    var n = $("input#text").val();
 
-        var result = pingPong(n);
+    var result = pingPong(n);
 
-        $("#userResult").text(result);
-
-        $("#result").show();
-        event.preventDefault();
-      });
-    });
+    $("#userResult").text(result);
+    $("#result").show();
+    event.preventDefault();
+  });
+});
