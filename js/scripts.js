@@ -1,6 +1,6 @@
 var pingPong = function(n) {
-var emptyString = [];
-var i;
+  var emptyString = [];
+  var i;
    for(var i=1; i <= n; i++){
 
      if (i % 15 === 0) {
@@ -13,14 +13,11 @@ var i;
        emptyString.push(" pong,");
      }
      else {
-       emptyString.push(i);
+       emptyString.push(" " + i + ", ");
      }
-   }
-   return emptyString.join("");
+    }
+  return emptyString.join("");
  }
-
-
- // Use console.log instead of return? Or add to string? append? Return is probably not right.
 
 
     $(document).ready(function() {

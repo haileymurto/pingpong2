@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
@@ -12,7 +12,14 @@
   <body>
     <div class="container">
       <h1>Ping Pong</h1>
-
+      <h3>Rules of the game:</h3>
+      <p>Ping Pong will count up to your number from 1, with the following exceptions:</p>
+      <p>
+        <ul> Numbers divisible by 3 are replaced with "ping"</ul>
+        <ul> Numbers divisible by 5 are replaced with "pong"</ul>
+        <ul> Numbers divisible by 15 are replaced with "pingpong"</ul>
+      </p>
+      <br>
       <form id="input">
              <p>Please enter a number:</p><input id="text" class="form-control" type="text"><br><button type="submit" class="btn">Go!</button>
          </form>
@@ -24,7 +31,6 @@
   </div>
 
 
-  <script src="js/jquery-1.12.0.js"></script>
-  <script src="js/scripts.js"></script>
+
   </body>
 </html>
